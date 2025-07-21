@@ -1,0 +1,16 @@
+go test
+go test -v (Modo Detallado / Verbose)
+go test -run TestNombre
+
+go test -cover (Cobertura de Código) % de codigo cubierto por pruebas
+go test -coverprofile=coverage.out (Detalle de Cobertura) generar archivo para ver que parte de codigo esta testeado.
+go tool cover --html = coverage.out  Visualizamos archivo en html.
+
+
+Metodo demora más
+go test --cpuprofile= cpu.out  Nombre archivo y perfil que se muestra.
+go tool pprof cpu.out abrir en la terminal resultados
+
+
+(pprof) top   ---Lista el que mas se demora
+(pprof) list  nombreTest  --nos muestra en que parte del codigo del test es la demora.
