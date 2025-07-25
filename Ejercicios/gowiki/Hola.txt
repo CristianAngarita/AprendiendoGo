@@ -1,0 +1,3 @@
+Hola mundo Go.
+2
+        adfasdf
